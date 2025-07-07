@@ -1,5 +1,5 @@
 import { useAuth } from "@/features/auth/hooks/useAuth";
-import MainLayout from "@/features/auth/MainLayout";
+import AuthLayout from "@/features/auth/AuthLayout";
 import AuthPage from "@/features/auth/pages/AuthPage";
 import NotFoundPage from "@/features/common/pages/NotFoundPage";
 import NotesPage from "@/features/notes/pages/NotesPage";
@@ -18,9 +18,9 @@ const AppRoutes = () => {
       <Route
         path="/auth"
         element={
-          <MainLayout>
+          <AuthLayout>
             <AuthPage />
-          </MainLayout>
+          </AuthLayout>
         }
       />
       <Route element={<ProtectedRoute />}>
